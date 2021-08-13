@@ -1,0 +1,58 @@
+blockquote::before {
+    content: "\201C";
+}
+
+blockquote::after {
+    content: "\201D";
+}
+
+blockquote {
+    color: blue;
+    width: 30%;
+}
+
+/* обратиться только к тем ссылкам, значение атрибута href которых начинается с https и сделайте их красным цветом */
+a[href^="https"] {
+    color: red;
+}
+
+/* применится только для последней ссылки в первом cписке (link6) и задаст ей зеленый фоновый цвет */
+.list > li:last-child > a {
+    background: green;
+}
+
+/* будет действовать только для <p>, который идет после <ul> и задаст размер шрифта 26px */
+ul + p {
+    font-size: 26px;
+}
+
+.text-box > h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color: gray;
+}
+
+.text-box > div > p {
+    color: red;
+}
+
+.text-box > p:nth-last-child(2) {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bg-box {
+    width: 600px;
+    min-height: 400px;
+    background: url("grass.png") bottom / 150px repeat-x,
+                url("lamp.png") top / 30px repeat-x,
+                url("Hedgehog.png") left / 20px repeat-y,
+                url("doughnut.png") right / 20px repeat-y,
+                url("pole.jpg") center / 400px no-repeat,
+                green;
+}

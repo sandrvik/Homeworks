@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.second_task {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+    border: dashed 2px red;
+    background-color: green;
+}
+
+.third_task {
+    width: 40%;
+    min-width: 500px;
+    text-align: justify;
+}
+
+.float_left {
+    width: 200px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.float_right {
+    width: 150px;
+    float: right;
+    margin: 20px 0 10px 20px;
+}

@@ -1,0 +1,50 @@
+@keyframes anticlock {
+    0% {
+        left:0;
+        top:0;
+        background-color:red;
+    }
+
+    25% {
+        left: 0;
+        top: 350px;
+        background-color: blue;
+    }
+
+    50% {
+        left: 350px;
+        top: 350px;
+        background-color: green;
+    }
+
+    75% {
+        top: 0;
+        left: 350px;
+        background-color: yellow;
+    }
+
+    100% {
+        left:0;
+        top:0;
+        background-color:red;
+    }
+}
+
+.container {
+    &__anim {
+        margin: 40px 0;
+        position: relative;
+    }
+}
+
+.anim {
+    width: 500px;
+    height: 500px;
+
+    &__sq{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        animation: anticlock 4s infinite;
+    }
+}

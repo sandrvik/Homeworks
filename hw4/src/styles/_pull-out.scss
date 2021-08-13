@@ -1,0 +1,74 @@
+.pull-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 230px;
+    height: 100vh;
+    background-color: #7e7e7e;
+    position: fixed;
+    left: -195px;
+    top: 0;
+    transition: all 0.3s;
+
+    &:hover {
+        left: 0;
+        transition: all 0.3s;
+    }
+
+    &:hover &__title {
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 50px 0 0 50px;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 20px;
+        position: relative;
+        transition: all 0.2s;
+    }
+
+    &__link:hover {
+        color: $orange;
+        transition: all 0.2s;
+    }
+
+    &__link::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -25%;
+        top: 50%;
+        margin-top: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: $orange;
+        border: 1px solid black;
+        transform: rotate(45deg);
+    }
+
+    &__aside {
+        color: white;
+        text-transform: uppercase;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__title {
+        writing-mode: vertical-rl;
+        margin: 10px;
+        user-select: none;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+}

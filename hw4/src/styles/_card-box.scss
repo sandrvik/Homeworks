@@ -1,0 +1,74 @@
+.card-box {
+    width:600px;
+    min-width: 600px;
+    height: 600px;
+    background-color: $darkgreen;
+
+    &__citation {
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    &__text {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__text::before {
+        content: '\201C'
+    }
+
+    &__text::after {
+        content: '\201D';
+    }
+
+    &__author {
+        font-weight: 500;
+    }
+
+    &__cards {
+        width: 100%;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    &__image {
+        width: 150px;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    &__image--rotate-20 {
+        transform: rotate(-20deg);
+        left: 100px;
+        bottom: 5px;
+    }
+
+    &__image--rotate-20:hover {
+        transition: all 0.3s;
+        bottom: 20px;
+    }
+
+    &__image--rotate-10 {
+        transform: rotate(-10deg);
+        bottom: 0;
+    }
+
+    &__image--rotate-10:hover {
+        transition: all 0.3s;
+        bottom: 20px;
+    }
+
+    &__image--rotate10 {
+        transform: rotate(10deg);
+        right: 100px;
+        top: 20px;
+    }
+
+    &__image--rotate10:hover {
+        transition: all 0.3s;
+        top: 0;
+    }
+}

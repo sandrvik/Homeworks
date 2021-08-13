@@ -1,0 +1,63 @@
+form {
+    width: 350px;
+}
+
+fieldset > div {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+fieldset + div {
+    margin: 15px 0 0 2px;
+}
+
+fieldset > p {
+    margin-left: 15px;
+}
+
+input {
+    border: 1px solid #80808080;
+}
+
+#countries {
+    width: 156px;
+}
+.column {
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Styling checkboxes */
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox + label::before {
+    content: " ";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-size: 100% 100%;
+}
+
+.custom-checkbox:checked+label::before {
+    background-image: url("free-icon-checkbox-1168671.png");
+}

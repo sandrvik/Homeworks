@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Forms</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Контактная информация</b></legend>
+            <div>
+                <label for="name"><b>Имя *</b></label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email"><b>E-mail</b></label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="tel"><b>Телефон</b></label>
+                <input type="tel" id="tel">
+            </div>
+            <div>
+                <label for="countries"><b>Страна</b></label>
+                <select id="countries">
+                    <option value="Ukraine">Украина</option>
+                    <option value="USA">США</option>
+                    <option value="Germany">Германия</option>
+                    <option value="Italy">Италия</option>
+                    <option value="Spain">Испания</option>
+                </select>
+            </div>
+            <div class="column">
+                <label for="about"><b>О себе:</b></label>
+                <textarea id="about"></textarea>
+            </div>
+            <p><b>Навыки:</b></p>
+            <div class="column">
+                <div>
+                    <input type="checkbox" id="html" class="custom-checkbox">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" class="custom-checkbox">
+                    <label for="css">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" class="custom-checkbox">
+                    <label for="js">JS</label>
+                </div>
+            </div>
+        </fieldset>
+        <div><input type="submit" value="Отправить"></div>
+    </form>
+</body>
+
+</html>

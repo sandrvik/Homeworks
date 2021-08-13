@@ -1,0 +1,15 @@
+@mixin list-none {
+    list-style: none;
+}
+
+@mixin a-reset {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin flex-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-content: center;
+}

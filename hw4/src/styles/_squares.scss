@@ -1,0 +1,29 @@
+.container__squares {
+    margin-top: 40px;
+}
+
+
+.squares {
+    &__sq {
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    &__sq--red {
+        background-color: $lightred;
+        right: 60px;
+    }
+
+    &__sq--blue {
+        background-color: $lightblue;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    &__sq--green {
+        background-color: $lightgreen;
+        bottom: 80px;
+        left: 60px;
+    }
+}
