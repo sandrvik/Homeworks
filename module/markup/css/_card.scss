@@ -1,0 +1,100 @@
+.card {
+    @include flex-config(column, center, center);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.2s;
+
+    &__img {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+
+        & > img {
+            width: 100%;
+            min-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__body {
+        @include flex-config(column, center, flex-start);
+        max-width: 80%;
+        padding: 30px 0 35px 0;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: #777777;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 25px 0;
+        text-align: left;
+    }
+
+    &__text {
+        color: #555555;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 15px 0;
+        line-height: 1.5em;
+        text-align: initial;
+    }
+
+    &__footer {
+        color: #999999;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 2px 2px 16px 0px #5b6ceb;
+    }
+
+    @include mq(tablet) {
+        @include flex-config(row, center, stretch);
+        min-width: 100%;
+        margin: 0;
+
+        &__img {
+            width: 50%;
+            height: 400px;
+
+            & > img {
+                object-fit: cover;
+            }
+        }
+
+        &__body {
+            width: 50%;
+            padding: 0 20px;
+            max-height: 400px;
+        }
+
+        &__text {
+            color: #333333;
+            font-size: 14px;
+        }
+
+        &__footer {
+            text-align: initial;
+        }
+    }
+
+    @include mq(desktop) {
+        &__img {
+            height: 300px;
+        }
+
+        &__title {
+            font-weight: 700;
+        }
+
+        &__text {
+            padding-right: 10px;
+        }
+    }
+}

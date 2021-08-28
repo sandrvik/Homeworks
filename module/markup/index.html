@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga</title>
+    <link rel="stylesheet" href="./fonts/icomoon/icomoon.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.png" alt="Yoga"></a>
+                </div>
+                <nav class="menu">
+                    <input id="toggle" class="menu__toggle" type="checkbox">
+                    <label for="toggle" class="menu__btn">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a href="#" class="menu__item menu__item--active">About us</a></li>
+                        <li><a href="#" class="menu__item">Reservation</a></li>
+                        <li><a href="#" class="menu__item">Gallery</a></li>
+                        <li><a href="#" class="menu__item">Blog</a></li>
+                        <li><a href="#" class="menu__item">Elements</a></li>
+                        <li><a href="#" class="menu__item">Shop</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="subheader">
+            <div class="container">
+                <div class="subheader__wrapper">
+                    <div class="subheader__form">
+                        <div class="form">
+                            <h2 class="form__title">Trial Class</h2>
+                            <form class="form__body" action="./action_script.php" method="POST">
+                                <input class="form__field" type="text" id="name" name="name"
+                                    placeholder="Enter your name" aria-label="name">
+                                <input class="form__field" type="tel" id="phone" name="phone"
+                                    placeholder="Enter your phone" aria-label="phone">
+                                <select class="form__field" id="class" name="class" aria-label="class">
+                                    <option selected disabled hidden>Chose your class</option>
+                                    <option value="first">First</option>
+                                    <option value="second">Second</option>
+                                    <option value="third">Third</option>
+                                    <option value="fourth">Fourth</option>
+                                </select>
+                                <button class="form__btn btn btn--blue">Try it</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="subheader__text text">
+                        <h1 class="text__title text__title--white">Just balance<br>your mind & body</h1>
+                        <h3 class="text__subtitle text__subtitle--white">Create the healthy living<br>for yourself</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="classes">
+                <div class="classes__text text">
+                    <h2 class="text__title text__title--blue text__title--small classes__title">yoga feature program
+                    </h2>
+                    <h3 class="classes__subtitle text__subtitle">Our Classes</h3>
+                </div>
+                <ul class="classes__cards">
+                    <li>
+                        <a class="classes__card card" href="#">
+                            <div class="card__img"><img src="./images/img-01.jpg" alt="hatha"></div>
+                            <div class="card__body">
+                                <h3 class="card__title">yoga for health</h3>
+                                <div class="card__text">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt.</div>
+                                <div class="card__footer">Ashtanga - Hatha</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="classes__card card" href="#">
+                            <div class="card__img"><img src="./images/img-02.jpg" alt="hatha"></div>
+                            <div class="card__body">
+                                <h3 class="card__title">yoga for lose weight</h3>
+                                <div class="card__text">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt.</div>
+                                <div class="card__footer">Ashtanga - Hatha</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="classes__card card" href="#">
+                            <div class="card__img"><img src="./images/img-03.jpg" alt="hatha"></div>
+                            <div class="card__body">
+                                <h3 class="card__title">yoga for children</h3>
+                                <div class="card__text">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt.</div>
+                                <div class="card__footer">Ashtanga - Hatha</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="classes__card card" href="#">
+                            <div class="card__img"><img src="./images/img-04.jpg" alt="hatha"></div>
+                            <div class="card__body">
+                                <h3 class="card__title">yoga for elderly</h3>
+                                <div class="card__text">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt.</div>
+                                <div class="card__footer">Ashtanga - Hatha</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="gallery">
+            <li class="gallery__item"><a href="https://google.com"><img class="gallery__img" src="images/img-05.jpg"
+                        alt="yoga"></a></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-06.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-07.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-08.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-09.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-10.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-11.jpg" alt="yoga"></li>
+            <li class="gallery__item"><img class="gallery__img" src="./images/img-12.jpg" alt="yoga"></li>
+        </ul>
+        <div class="container">
+            <div class="about">
+                <div class="text about__text">
+                    <h1 class="text__title text__title--blue about__title">about us</h1>
+                    <p class="text__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting
+                        sokui.
+                    </p>
+                </div>
+                <div class="swiper">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./images/img-13.jpg" alt="yoga" class="swiper__img">
+                            </div>
+                            <div class="swiper-slide"><img src="./images/img-13.jpg" alt="yoga" class="swiper__img">
+                            </div>
+                            <div class="swiper-slide"><img src="./images/img-13.jpg" alt="yoga" class="swiper__img">
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper__btn swiper__btn--left"></div>
+                        <div class="swiper-button-next swiper__btn swiper__btn--right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="container">
+                <ul class="features__wrapper">
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-01.png" alt="improved overall health">
+                        </div>
+                        <h3 class="feature__title">improved overall health</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-02.png" alt="increased concentration">
+                        </div>
+                        <h3 class="feature__title">increased concentration</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-03.png" alt="balance your mind">
+                        </div>
+                        <h3 class="feature__title">balance<br>your mind</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-04.png" alt="sleep better">
+                        </div>
+                        <h3 class="feature__title">sleep<br>better</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-05.png" alt="weight loss">
+                        </div>
+                        <h3 class="feature__title">weight loss</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-06.png" alt="strengthens your bones">
+                        </div>
+                        <h3 class="feature__title">strengthens<br>your bones</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-07.png" alt="increased flexibility">
+                        </div>
+                        <h3 class="feature__title">increased<br>flexibility</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                    <li class="feature features__feature">
+                        <div class="feature__icon">
+                            <img src="./images/ico-08.png" alt="lower blood pressure">
+                        </div>
+                        <h3 class="feature__title">lower blood<br>pressure</h3>
+                        <p class="feature__paragraph">Enim ad minim veniam, quis nostrud exercitation toui ullamcomi
+                            laboris nisi ut aliquip ex ea com.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="prices">
+            <div class="container">
+                <ul class="prices__wrapper">
+                    <li class="price-card">
+                        <div class="price-card__price">49</div>
+                        <ul class="price-card__options">
+                            <li class="price-card__option">entry date: mon - fri</li>
+                            <li class="price-card__option">entry time: 8a.m - 8p.m</li>
+                            <li class="price-card__option">nutrition advicer: no</li>
+                        </ul>
+                        <div class="price-card__btn-wrapper"><a href="" class="price-card__btn btn btn--blue">Buy
+                                now</a></div>
+                    </li>
+                    <li class="price-card">
+                        <div class="price-card__price">69</div>
+                        <ul class="price-card__options">
+                            <li class="price-card__option">entry date: mon - fri</li>
+                            <li class="price-card__option">entry time: 8a.m - 8p.m</li>
+                            <li class="price-card__option">nutrition advicer: yes</li>
+                        </ul>
+                        <div class="price-card__btn-wrapper"><a href="" class="price-card__btn btn btn--blue">Buy
+                                now</a></div>
+                    </li>
+                    <li class="price-card">
+                        <div class="price-card__price">99</div>
+                        <ul class="price-card__options">
+                            <li class="price-card__option">entry date: mon - sun</li>
+                            <li class="price-card__option">entry time: 8a.m - 8p.m</li>
+                            <li class="price-card__option">nutrition advicer: yes</li>
+                        </ul>
+                        <div class="price-card__btn-wrapper"><a href="" class="price-card__btn btn btn--blue">Buy
+                                now</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-wrapper__footer footer">
+                    <div class="footer__about">
+                        <h3 class="footer__title">about</h3>
+                        <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam,
+                            quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </p>
+                    </div>
+                    <div class="footer__contacts contacts">
+                        <h3 class="contacts__title">contact us</h3>
+                        <ul class="contacts__wrapper">
+                            <li class="contacts__contact contacts__contact--address">
+                                <address>5419 Joseph Mountains<br>Apt. 716</address>
+                            </li>
+                            <li class="contacts__contact contacts__contact--mail">
+                                <a href="mailto:joga.info@example.com">joga.info@example.com</a>
+                            </li>
+                            <li class="contacts__contact contacts__contact--tel">
+                                <a href="tel:+123456789">+1 234 567 89</a><br>
+                                <a href="tel:+123467890">+1 234 678 90</a>
+                            </li>
+                            <li class="contacts__contact contacts__contact--site">
+                                <a href="http://example.com" target="_blank"
+                                    rel="noopener noreferrer">www.example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer__socials socials">
+                        <li class="socials__item"><a href="https://linkedin.com" target="_blank"><span
+                                    class="icon-linkedin"></span></a></li>
+                        <li class="socials__item"><a href="https://twitter.com" target="_blank"><span
+                                    class="icon-twitter"></span></a></li>
+                        <li class="socials__item"><a href="https://facebook.com" target="_blank"><span
+                                    class="icon-facebook"></span></a></li>
+                        <li class="socials__item"><a href="https://google.com" target="_blank"><span
+                                    class="icon-google-plus3"></span></a></li>
+                        <li class="socials__item"><a href="https://pinterest.com" target="_blank"><span
+                                    class="icon-pinterest"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="container">
+                <div class="copyright-wrapper__copyright copyright">
+                    Copyright &copy; 2016-2017 Yoga classes
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let body = document.body;
+        let toggle = document.getElementById('toggle');
+        toggle.addEventListener('click', () => {
+            if (toggle.checked) {
+                body.style.overflow = "hidden";
+            }
+            else {
+                body.style.overflow = "initial";
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>

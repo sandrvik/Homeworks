@@ -1,0 +1,55 @@
+.swiper {
+    &__img {
+        display: block;
+        max-width: 85%;
+        margin: 0 auto;
+        box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.13);
+    }
+
+    &__btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: white;
+        margin-top: -20px;
+        box-shadow: 4px 4px 8px 3px rgba(34, 60, 80, 0.13);
+
+        &--left {
+            left: 5px;
+        }
+
+        &--right {
+            right: 5px;
+        }
+
+        &::after {
+            position: absolute;
+            top: 8px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+    }
+
+    @include mq(tablet) {
+        width: 50%;
+    }
+
+    @include mq(wide) {
+        width: 55%;
+
+        &__btn {
+            &--left {
+                left: 25px;
+            }
+
+            &--right {
+                right: 25px;
+            }
+
+            &::after {
+                font-size: 20px;
+                font-weight: 900;
+            }
+        }
+    }
+}
